@@ -10,6 +10,9 @@ body {
   background-color: var(--bg-color);
   overflow-x: hidden;
 }
+img {
+  pointer-events: none;
+}
 /* BORDER IMAGE =============== */
 .img-thumbnail {
   background-color: var(--color1);
@@ -47,6 +50,9 @@ a,
 p {
   color: var(--color2);
 }
+a:hover {
+  color: var(--color3);
+}
 /* NAVBAR =============== */
 .navbar .navbar-nav .nav-link {
   color: var(--color1);
@@ -58,10 +64,7 @@ p {
 .sm-icons {
   flex-direction: row;
 }
-.bi-list {
-  font-size: 2em;
-}
-.bi-list:hover {
+.hamburger:hover {
   filter: opacity(0.5);
 }
 .navbar-brand {
@@ -72,7 +75,7 @@ p {
   filter: opacity(0.5);
 }
 @media only screen and (max-width: 960px) {
-  .sm-icons .nav-item {
+  .nav-item .nav-link {
     padding-right: 1em;
   }
 }
@@ -83,13 +86,10 @@ p {
   max-width: 60%;
   margin-left: 20%;
 }
-/* ABOUT ME =============== */
+/* SKILL =============== */
 .iconify {
   font-size: 2em;
   cursor: pointer;
-}
-a:hover {
-  color: var(--color3);
 }
 /* SERVICE =============== */
 .card {
@@ -99,7 +99,20 @@ a:hover {
 .h5-service {
   color: var(--color1);
 }
-/* FOOTER =============== */
-footer {
-  margin-top: 1em;
+/* CONTACT =============== */
+.form-control {
+  background-color: var(--color2);
+  color: var(--color1);
+  border: none;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--color2);
+  filter: opacity(0.5);
+}
+.iconify.arrow-up {
+  font-size: 1.4em;
 }
