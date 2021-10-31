@@ -3,7 +3,7 @@
   font-family: Poppins, sans-serif;
   --color1: hsl(0, 0%, 90%);
   --color2: hsla(0, 0%, 80%, 0.4);
-  --color3: crimson;
+  --color3: #39ff14;
   --bg-color: #161a1a;
 }
 body {
